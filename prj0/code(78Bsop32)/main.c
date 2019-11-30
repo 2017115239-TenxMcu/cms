@@ -10,6 +10,7 @@ void main(){
    F_turnOnWDT();
    while(1){
       //user coding
+<<<<<<< HEAD
      while (1) {
     F_clearWDT();  //清除看门狗定时器
     delayMs(20);
@@ -18,6 +19,12 @@ void main(){
        F_ledNeg();
      }
      keyValue = D_keyNull;	  
+=======
+      F_ledOff();
+      delayMs(500);
+      F_ledOn();
+      delayMs(500);
+>>>>>>> a1cd8e8579a9397a23e800169b2b8d285ecda5bd
    }
 }
 //---------------------------------------------

@@ -24,8 +24,12 @@
    _nop_();
    _nop_();
    // IO 模式初始化
+<<<<<<< HEAD
  P1MODL = 0xa8; //输入
  P1_0 = 0;
+=======
+ P1MODL = 0xaa; //输出
+>>>>>>> a1cd8e8579a9397a23e800169b2b8d285ecda5bd
  // IO 状态初始化
  F_ledOff();
  } 

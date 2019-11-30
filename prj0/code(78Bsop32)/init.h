@@ -12,4 +12,8 @@
  void SysInit();
  void VarsInit();
 
+<<<<<<< HEAD
  #endif
+=======
+ #endif 
+>>>>>>> a1cd8e8579a9397a23e800169b2b8d285ecda5bd
