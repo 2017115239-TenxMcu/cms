@@ -5,13 +5,19 @@ void main(){
    //初始化
    SysInit(); 
    VarsInit();
+   F_ledOn();
+   delayMs(500);
+   F_turnOnWDT();
    while(1){
-      F_turnOnWDT();
       //user coding
-      F_ledOff();
-      delayMs(500);
-      F_ledOn();
-      delayMs(500);
+     while (1) {
+    F_clearWDT();  //清除看门狗定时器
+    delayMs(20);
+    GetKeys();
+     if (D_keyValue1 == keyValue) {
+       F_ledNeg();
+     }
+     keyValue = D_keyNull;	  
    }
 }
 //---------------------------------------------
